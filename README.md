@@ -1,3 +1,3 @@
 # ansible-config-mgt
 
-save_artifacts
+save_artifact
