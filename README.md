@@ -1,3 +1,3 @@
 # ansible-config-mgt
 
-copy_save_artifact_new1
+copy_save_artifact_new
