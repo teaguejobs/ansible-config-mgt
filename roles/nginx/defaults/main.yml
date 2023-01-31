@@ -84,7 +84,7 @@ nginx_upstreams:
     keepalive: 16 # optional
     servers: { 
        "web1 weight=3",
-       "172.31.2.191 weight=3",
+       "web2 weight=3",
        "proxy_pass http://myapp1"
     }
 
