@@ -1,6 +1,7 @@
    pipeline {
     agent any
 
+    stages {
     stage("Initial cleanup") {
           steps {
             dir("${WORKSPACE}") {
@@ -8,7 +9,7 @@
             }
           }
         }
-    stage('Build') {
+    stage("Build") {
       steps {
         script {
           sh 'echo "Building Stage"'
@@ -41,5 +42,6 @@
           steps {
             cleanws()
           }
-      } 
+    }
+    }
 }
