@@ -1,14 +1,14 @@
-   pipeline {
+pipeline {
     agent any
 
-  stages{
+  stages {
     stage('Initial cleanup') {
           steps {
             dir("${WORKSPACE}") {
               deleteDir()
             }
           }
-        }
+    }
     stage('Build') {
       steps {
         script {
@@ -28,7 +28,7 @@
       steps {
         script {
           sh 'echo "packaging app"'
-       }
+        }
       }
     }
     stage('deploy') {
@@ -42,6 +42,6 @@
           steps {
             cleanws()
           }
-    }
+      }
   }
 }
