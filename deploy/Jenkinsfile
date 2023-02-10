@@ -1,15 +1,15 @@
    pipeline {
     agent any
 
-  stages{
-    stage("Initial cleanup") {
+  stages {
+    stage('Initial cleanup') {
           steps {
             dir("${WORKSPACE}") {
               deleteDir()
             }
           }
         }
-    stage("Build") {
+    stage('Build') {
       steps {
         script {
           sh 'echo "Building Stage"'
@@ -43,5 +43,5 @@
             cleanws()
           }
     }
-    }
+  }
 }
