@@ -1,7 +1,6 @@
    pipeline {
     agent any
 
-  stages {
     stage("Initial cleanup") {
           steps {
             dir("${WORKSPACE}") {
@@ -43,5 +42,4 @@
             cleanws()
           }
       } 
-  }
 }
