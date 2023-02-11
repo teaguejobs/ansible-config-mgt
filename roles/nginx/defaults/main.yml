@@ -1,9 +1,2 @@
 ---
-# defaults file for nginxRole
-enable_nginx_lb: false
-load_balancer_is_required: false
-
-#IP mapping for webservers
-Web1: 172.31.12.64 
-Web2: 172.31.2.191
-lb: 172.31.3.229
+# defaults file for nginx
