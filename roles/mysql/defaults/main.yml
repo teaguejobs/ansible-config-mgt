@@ -115,7 +115,7 @@ replicate: 1
 # Users.
 mysql_users: []
 name: webaccess
-host: 127.0.0.1
+host: 0.0.0.0
 password: secret
 priv: tooling.*
 
