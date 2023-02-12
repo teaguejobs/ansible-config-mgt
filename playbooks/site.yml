@@ -13,9 +13,7 @@
 #  - always
 
 #- name: include env-vars file
-# import_playbook: ../dynamic-assignments/env-vars.yml
-# tags:
-   - always
+# import_playbook: ../dynamic-assignments/env-vars.yml 
 
 #- name: webserver assignment
 #  import_playbook: ../static-assignments/webservers.yml
