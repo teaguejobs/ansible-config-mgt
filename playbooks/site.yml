@@ -1,11 +1,11 @@
 ---
  - hosts: nginx
  - name: nginx assignment
-   ansible.builtin.import_playbook: ../static-assignments/nginx.yml
+   import_playbook: ../static-assignments/nginx.yml
 
  - hosts: db
  - name: database assignment
-   ansible.builtin.import_playbook: ../static-assignments/database.yml
+   import_playbook: ../static-assignments/database.yml
 
 #- name: import common file
 # import_playbook: ../static-assignments/common.yml
@@ -13,9 +13,7 @@
 #  - always
 
 #- name: include env-vars file
-# import_playbook: ../dynamic-assignments/env-vars.yml
-# tags:
-   - always
+# import_playbook: ../dynamic-assignments/env-vars.yml 
 
 #- name: webserver assignment
 #  import_playbook: ../static-assignments/webservers.yml
