@@ -13,7 +13,7 @@
 
 - hosts: todo
 - name: Deploy the todo application
-  ansible.builtin.import_playbook: ../static-assignments/deployment.yml
+  import_playbook: ../static-assignments/deployment.yml
 
 
 #- name: import common file
