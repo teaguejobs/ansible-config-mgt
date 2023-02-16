@@ -4,12 +4,16 @@
  #  import_playbook: ../static-assignments/nginx.yml
 
  #- hosts: db
- - name: database assignment
-   import_playbook: ../static-assignments/database.yml
+ #- name: database assignment
+ #  import_playbook: ../static-assignments/database.yml
 
  #- hosts: artifactory
  #- name: artifactory assignment
  # ansible.builtin.import_playbook: ../static-assignments/artifactory.yml
+
+ - hosts: todo
+ - name: Deploy the todo application
+ - ansible.builtin.import_playbook: ../static-assignments/deployment.yml
 
 
 #- name: import common file
