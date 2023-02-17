@@ -18,7 +18,7 @@
 
 - hosts: sonar
 - name: sonar assignment
-   import_playbook: ../static-assignments/sonar.yml
+  ansible.builtin.import_playbook: ../static-assignments/sonar.yml
 
 
 #- name: import common file
