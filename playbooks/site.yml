@@ -11,9 +11,14 @@
  #- name: artifactory assignment
  # ansible.builtin.import_playbook: ../static-assignments/artifactory.yml
 
-- hosts: todo
-- name: Deploy the todo application
-  import_playbook: ../static-assignments/deployment.yml
+#- hosts: todo
+#- name: Deploy the todo application
+ # import_playbook: ../static-assignments/deployment.yml
+
+
+- hosts: sonar
+- name: sonar assignment
+   import_playbook: ../static-assignments/sonar.yml
 
 
 #- name: import common file
