@@ -1,6 +1,6 @@
 ---
-- name: update web, nfs and db servers
-  hosts: webservers, nfs, db
+- name:  Update pentest:children servers
+  hosts: pentest-todo
   remote_user: ec2-user
   become: yes
   become_user: root
@@ -10,8 +10,8 @@
         name: wireshark
         state: latest
 
-- name: update LB server
-  hosts: lb
+- name: update pentest:children server
+  hosts: pentest-tooling
   remote_user: ubuntu
   become: yes
   become_user: root
