@@ -26,7 +26,7 @@
         state: latest
 
 - name: create directory, file and set timezone on all servers
-  hosts: webservers, nfs, db 
+  hosts: pentest-todo
   remote_user: ec2-user
   become: yes
   become_user: root
